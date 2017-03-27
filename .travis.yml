@@ -8,4 +8,16 @@ branches:
   only:
     - master
 matrix:
+<<<<<<< Updated upstream
   fast_finish: true
+=======
+  include:
+  - script: /opt/chefdk/embedded/bin/cookstyle
+    env:  COOKSTYLE=1
+  - script: /opt/chefdk/embedded/bin/foodcritic . --exclude spec -f any
+    env:  FOODCRITIC=1
+  - script:
+      - bundle install
+      - /opt/chefdk/embedded/bin/rspec --color --default-path test/unit
+    env:  CHEFSPEC=1
+>>>>>>> Stashed changes
