@@ -1,5 +1,5 @@
 #
-# Cookbook: gemrc
+# Cookbook: blp-gemrc
 # License: Apache 2.0
 #
 # Copyright 2013, OptimisCorp, Inc.

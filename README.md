@@ -1,6 +1,10 @@
-# gemrc-cookbook
-[![Cookbook Version](https://img.shields.io/cookbook/v/gemrc.svg)](https://supermarket.chef.io/cookbooks/gemrc)
-[![License](https://img.shields.io/badge/license-Apache_2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+# blp-gemrc cookbook
+
+[![Build Status](https://img.shields.io/travis/johnbellone/blp-gemrc-cookbook.svg)](https://travis-ci.org/johnbellone/blp-gemrc-cookbook)
+[![Code Quality](https://img.shields.io/codeclimate/github/johnbellone/blp-gemrc-cookbook.svg)](https://codeclimate.com/github/johnbellone/blp-gemrc-cookbook)
+[![Test Coverage](https://codeclimate.com/github/johnbellone/blp-gemrc-cookbook/badges/coverage.svg)](https://codeclimate.com/github/johnbellone/blp-gemrc-cookbook/coverage)
+[![Cookbook Version](https://img.shields.io/cookbook/v/blp-gemrc.svg)](https://supermarket.chef.io/cookbooks/blp-gemrc)
+[![License](https://img.shields.io/github/license/johnbellone/blp-gemrc-cookbook.svg?maxAge=2592000)](http://www.apache.org/licenses/LICENSE-2.0)
 
 Library cookbook which manages a [RubyGems configuration file][0].
 
@@ -18,7 +22,7 @@ to [mirror the RubyGems.org repository][3].
 node.default['gemrc']['path'] = Gem::ConfigFile::SYSTEM_WIDE_CONFIG_FILE
 node.default['gemrc']['reload'] = true
 node.default['gemrc']['config']['sources'] = ['http://artifactory.corporate.com/artifactory/api/gems/ruby-gems/']
-include_recipe 'gemrc::default'
+include_recipe 'blp-gemrc::default'
 ```
 
 [0]: http://docs.ruby-lang.org/en/2.1.0/Gem/ConfigFile.html
