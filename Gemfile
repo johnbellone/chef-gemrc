@@ -9,6 +9,7 @@ group :lint do
 end
 
 group :unit, :integration do
+  gem 'chef-dk'
   gem 'chefspec'
   gem 'test-kitchen'
 end
